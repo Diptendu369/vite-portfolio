@@ -1,39 +1,34 @@
+
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../assets/home-main.svg"; 
-import bgImage from "../../assets/home-bg.jpg"; 
-// import ParticlesBackground from "../ParticlesBackground"; // Updated import
 import Home2 from "./Home2";
 import Type from "./Type";
+import { Opulento } from "uvcanvas"; 
 
 function Home() {
   return (
-    <div
-      style={{
-        position: "relative",
-        backgroundImage: `url(${bgImage})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundAttachment: "fixed",
-        minHeight: "100vh",
-      }}
-    >
-      <div
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-          backgroundColor: "rgba(0, 0, 0, 0.6)",
-          zIndex: 1,
+    <div style={{ position: "relative", minHeight: "100vh" }}>
+      {/* Novatrix Background with Lower Opacity */}
+      <div 
+        style={{ 
+          position: "absolute", 
+          top: 0, 
+          left: 0, 
+          width: "100%", 
+          height: "100%", 
+          zIndex: 0,
+          opacity: 0.2,  // Adjust opacity here (0.1 - 1)
+          pointerEvents: "none", // Ensures it doesn’t block interactions
+          overflow: "hidden",
+          
         }}
-      ></div>
+      >
+        <Opulento />
+      </div>
 
-      {/* Add the Particles Background */}
-      {/* <ParticlesBackground /> */}
-
-      <section style={{ position: "relative", zIndex: 2 }}>
+      {/* Overlay content with zIndex to stay above Novatrix */}
+      <section style={{ position: "relative", zIndex: 1 }}>
         <Container fluid id="home">
           <Container className="home-content">
             <Row>
@@ -46,8 +41,7 @@ function Home() {
                 </h1>
 
                 <h1 className="heading-name">
-                  I'M
-                  <strong className="main-name"> DIPTENDU JASHU </strong>
+                  I'M <strong className="main-name">DIPTENDU JASHU</strong>
                 </h1>
 
                 <div style={{ padding: 50, textAlign: "left" }}>

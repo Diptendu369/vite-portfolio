@@ -1,0 +1,40 @@
+/* Remove any border or extra padding in the footer */
+.footer {
+  background-color: #0a0a0a; /* Adjust background if needed */
+  padding: 20px 0;
+  border: none !important;
+  box-shadow: none !important;
+  position: relative;
+}
+
+/* Ensure there's no extra progress bar */
+.footer::after,
+.footer::before {
+  display: none !important;
+}
+
+/* Hide any unwanted bottom progress bar */
+.progress-bar, .progress {
+  display: none !important;
+}
+
+/* Adjust social icon spacing */
+.footer-icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons {
+  margin: 0 10px;
+}
+
+.social-icons a {
+  font-size: 24px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
