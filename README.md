@@ -60,9 +60,9 @@ This project is deployed on **Netlify**. To deploy your own version:
 
 ## 📬 Contact Me
 Feel free to connect with me:
-- **LinkedIn**: [Diptendu Jashu](https://www.linkedin.com/in/diptendujashu)
-- **GitHub**: [diptendu-jashu](https://github.com/diptendu-jashu)
-- **Email**: diptendujashu@example.com
+- **LinkedIn**: [Diptendu Jashu](https://www.linkedin.com/in/diptendu123)
+- **GitHub**: [diptendu-jashu](https://github.com/diptendu369)
+- **Email**: diptendujashu@gmail.com
 
 ---
 
